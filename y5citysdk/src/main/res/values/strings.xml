@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">y5citysdk</string>
+
+    <string name="activity_main_title">Y5 City SDK</string>
+    <string name="activity_main_btn_home">首頁</string>
+    <string name="activity_main_btn_qrcode">QR Code</string>
+    <string name="activity_main_btn_favorite">收藏</string>
+    <string name="activity_main_btn_message">推播</string>
+    <string name="activity_main_btn_around">周邊</string>
+    <string name="activity_main_btn_trip">祈福好行</string>
+    <string name="activity_main_btn_guide">祈福聖地</string>
+
+    <string name="dialog_button_confirm_text">確定</string>
+    <string name="dialog_button_cancel_text">取消</string>
+    <string name="dialog_button_ok_text">好</string>
+    <string name="dialog_button_no_text">否</string>
+    <string name="dialog_title_text_log">Log</string>
+    <string name="dialog_title_text_note">提 示</string>
+    <string name="error_dialog_title_text_normal">請注意</string>
+    <string name="error_dialog_title_text_api">API Error</string>
+    <string name="error_dialog_title_text_unknown">發生未預期錯誤</string>
+    <string name="error_dialog_title_text_json_parse_error">發生未預期的錯誤</string>
+    <string name="error_dialog_title_text_no_network">無連接網路</string>
+    <string name="error_dialog_message_text_no_network">請檢查網路連線</string>
+    <string name="dialog_message_network_connect_not_good">此處無可供服務流量之網路，請移動至適當區域，檢查連線狀況後再試。</string>
+    <string name="dialog_message_loading">載入中......</string>
+
+    <string name="info_pager_title_theme">主題導覽</string>
+    <string name="info_pager_title_custom">旅人自訂</string>
+    <string name="info_pager_title_share">達人分享</string>
+    <string name="info_pager_title_around">周邊資訊</string>
+
+    <string name="fragment_religion_info_feature">特色</string>
+    <string name="fragment_religion_info_visiting">敬拜</string>
+    <string name="fragment_religion_info_intro">探源</string>
+    <string name="fragment_religion_info_allusion">典故</string>
+    <string name="fragment_religion_info_info">資訊</string>
+    <string name="fragment_religion_info_goto">前 往</string>
+    <string name="fragment_religion_info_add_point">加入行程</string>
+    <string name="fragment_religion_info_KS">高雄市</string>
+    <string name="fragment_religion_info_opne_time">開放時間</string>
+
+    <string name="fragment_flow_main_god">主要信仰</string>
+    <string name="fragment_flow_flow">敬拜流程</string>
+
+    <string name="fragment_intro_desc">沿革</string>
+    <string name="fragment_intro_fest">重要活動</string>
+    <string name="fragment_intro_allusion">特殊故事（神蹟）</string>
+
+    <string name="fragment_home_menu_language">中文 / English</string>
+    <string name="fragment_home_menu_login">登入</string>
+    <string name="fragment_home_menu_logout">登出</string>
+    <string name="fragment_home_menu_setting">設定</string>
+    <string name="fragment_home_menu_tutorial">操作教學</string>
+    <string name="fragment_home_menu_privacy">隱私權政策</string>
+
+    <string name="fragment_setting_notification">推播通知</string>
+    <string name="fragment_setting_location">允許定位</string>
+
+    <string name="privacy_page_agree">同意</string>
+    <string name="privacy_page_refuse">拒絕</string>
+
+    <string name="fragment_locale_chinese">中文</string>
+    <string name="fragment_locale_english">English</string>
+
+    <string name="dialog_message_no_login">請先登入</string>
+    <string name="dialog_message_log_out_complete">登出成功</string>
+
+    <string name="fragment_login_hint">請選擇登入方式</string>
+
+    <string name="fragment_custom_add">新增</string>
+    <string name="fragment_custom_setup_save">儲存</string>
+    <string name="fragment_custom_setup_title">建立行程</string>
+    <string name="fragment_custom_setup_name">行程名稱</string>
+    <string name="fragment_custom_setup_name_hint">輸入行程名稱</string>
+    <string name="fragment_custom_setup_date">出發日期</string>
+    <string name="fragment_custom_setup_date_hint">輸入出發日期</string>
+    <string name="fragment_custom_setup_days">行程天數</string>
+    <string name="fragment_custom_setup_traffic">交通方式</string>
+    <string name="fragment_custom_setup_traffic_car">自行開車前往</string>
+    <string name="fragment_custom_setup_traffic_mrt">搭乘大眾運輸</string>
+    <string name="fragment_custom_setup_days_hint">輸入行程天數</string>
+    <string name="fragment_custom_shake_title">新增行程</string>
+    <string name="fragment_custom_shake_hint">誠心祈求，搖一搖手機</string>
+    <string name="fragment_custom_shake_list">前往宗教場域列表</string>
+
+    <string name="fragment_theme_route_route_one">路線1</string>
+    <string name="fragment_theme_route_route_two">路線2</string>
+    <string name="fragment_theme_route_route_copy">複製此行程至旅人自訂</string>
+    <string name="fragment_theme_dialog_traffic_title">選擇交通方式</string>
+    <string name="fragment_theme_dialog_traffic_car">自行開車</string>
+    <string name="fragment_theme_dialog_traffic_mrt">大眾運輸</string>
+
+    <string name="fragment_custom_route_action_bar_title">旅人自訂</string>
+    <string name="fragment_custom_route_new">新增景點</string>
+    <string name="fragment_custom_route_from_favorite">從我的收藏新增</string>
+    <string name="fragment_custom_route_cancel">取消</string>
+    <string name="fragment_custom_route_default">選擇封面</string>
+    <string name="fragment_custom_route_gallery">從圖片庫選取照片</string>
+    <string name="fragment_custom_route_departure_time">出發時間：</string>
+    <string name="fragment_custom_route_day_one">第1天</string>
+    <string name="fragment_custom_route_day_two">第2天</string>
+    <string name="fragment_custom_route_day_three">第3天</string>
+
+    <string name="item_theme_traffic_about">約</string>
+
+    <string name="fragment_info_map_title">路徑規劃</string>
+    <string name="fragment_info_map_custom_func">自訂功能</string>
+    <string name="fragment_info_map_custom_time_edit">編輯</string>
+    <string name="fragment_info_map_estimated_time">預計時間&#160;</string>
+    <string name="fragment_info_map_custom_time">自訂時間&#160;</string>
+    <string name="fragment_info_map_points">&#160;景點</string>
+    <string name="fragment_info_map_hour">&#160;小時&#160;</string>
+    <string name="fragment_info_map_minute">&#160;分鐘&#160;</string>
+
+    <string name="fragment_favorite_tab_religion">宗教場域</string>
+    <string name="fragment_favorite_tab_food">美食</string>
+    <string name="fragment_favorite_tab_view">景點</string>
+    <string name="fragment_favorite_tab_shopping">購物</string>
+    <string name="fragment_favorite_tab_hotel">住宿</string>
+    <string name="fragment_favorite_tab_traffic">交通</string>
+    <string name="fragment_favorite_complete">完成</string>
+    <string name="fragment_favorite_delete">刪除</string>
+
+    <string name="fragment_custom_main_master_share_cancel">取消達人分享</string>
+    <string name="fragment_custom_main_master_share">達人分享</string>
+    <string name="fragment_custom_main_share">分享行程</string>
+    <string name="fragment_custom_main_copy">複製行程</string>
+    <string name="fragment_custom_main_delete">刪除</string>
+    <string name="fragment_custom_main_cancel">取消</string>
+    <string name="fragment_custom_main_share_to">分享至</string>
+    <string name="fragment_custom_main_master_share_done">已分享至達人分享</string>
+    <string name="fragment_custom_main_master_share_cancel_done">已取消分享至達人分享</string>
+
+    <string name="fragment_share_main_points">個景點</string>
+
+    <string name="notification_history_page_dialog_message_notification_not_on">活動推播設定未開啟</string>
+    <string name="notification_history_page_menu_item_delete">刪除</string>
+
+    <string name="dialog_share_ling">LINE</string>
+    <string name="dialog_share_fb">Facebook</string>
+    <string name="dialog_share__copy_link">複製連結</string>
+    <string name="dialog_share_master">達人分享</string>
+    <string name="dialog_share_copy_done">已複製至剪貼簿</string>
+
+    <string name="fragment_guide_area">行政區</string>
+    <string name="fragment_guide_objective">目的</string>
+    <string name="fragment_guide_spinner_tip_text">全部</string>
+
+    <string name="search_main_page_note_title">請輸入關鍵字</string>
+</resources>

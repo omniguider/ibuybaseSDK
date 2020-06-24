@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/activity_main_user_id_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="輸入使用者ID"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray_a4" />
+
+        <EditText
+            android:id="@+id/activity_main_user_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="輸入使用者名稱"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray_a4" />
+
+        <EditText
+            android:id="@+id/activity_main_project_id_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="輸入專案代號"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray_a4" />
+
+        <TextView
+            android:id="@+id/activity_main_to_sdk_tv"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:background="@color/gray_c3"
+            android:gravity="center"
+            android:text="前往Y5 City SDK"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

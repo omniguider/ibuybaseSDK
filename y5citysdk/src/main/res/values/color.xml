@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ff8383</color>
+    <color name="colorPrimaryDark">#ff8383</color>
+    <color name="colorAccent">#ff8383</color>
+
+    <color name="sdkColorPrimary">#ff8383</color>
+
+    <color name="gray_e0">#e0e0e0</color>
+    <color name="gray_c3">#c3c3c3</color>
+    <color name="gray_3c">#3c3c3c</color>
+    <color name="gray_33">#333333</color>
+    <color name="gray_f3">#f3f3f3</color>
+    <color name="gray_6a">#6a6a6a</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_c9">#c9c9c9</color>
+    <color name="gray_64">#646464</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_d8">#d8d8d8</color>
+    <color name="gray_a4">#a4aab3</color>
+    <color name="gray_cd">#cdcdcd</color>
+    <color name="gray_a7">#a7a7a7</color>
+    <color name="gray_8a">#8a000000</color>
+    <color name="gray_27">#272727</color>
+    <color name="gray_8c">#8c8c8c</color>
+    <color name="black_f3">#f31f1f1f</color>
+    <color name="black_66">#66000000</color>
+    <color name="btn_orange">#ff7373</color>
+    <color name="time_blue">#0074f1</color>
+    <color name="menu_bg">#f31f1f1f</color>
+    <color name="items_text_gray">#a4aab3</color>
+    <color name="tab_text_selected">#ffffff</color>
+    <color name="tab_text_unselected">#a7a7a7</color>
+    <color name="tab_red">#ee254d</color>
+
+
+    <color name="info_purple">#7761fa</color>
+    <color name="info_orange">#ff6161</color>
+    <color name="info_green">#26bec3</color>
+    <color name="info_blue">#6497ff</color>
+    <color name="info_brown">#f1a02a</color>
+
+    <color name="map_circle_stroke_color">#3b5998</color>
+    <color name="map_circle_fill_color">#804fa0ff</color>
+
+</resources>

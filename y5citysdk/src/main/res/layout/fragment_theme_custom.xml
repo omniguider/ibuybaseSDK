@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_custom_main_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <GridView
+        android:id="@+id/fragment_custom_main_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="2"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <ImageView
+        android:id="@+id/fragment_custom_main_menu_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@color/black_66"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fragment_custom_main_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/fragment_custom_main_master_share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_main_master_share"
+            android:textColor="@color/sdkColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_cd"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fragment_custom_main_share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_main_share"
+            android:textColor="@color/sdkColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/gray_cd" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/fragment_custom_main_copy"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:gravity="center"-->
+        <!--android:letterSpacing="0.2"-->
+        <!--android:text="@string/fragment_custom_main_copy"-->
+        <!--android:textColor="@color/sdkColorPrimary"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="bold" />-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_cd"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fragment_custom_main_delete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_main_delete"
+            android:textColor="@color/sdkColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_cd" />
+
+        <TextView
+            android:id="@+id/fragment_custom_main_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/solid_gradient_red"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_main_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solid_round_rectangle_gray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/item_religion_feature_dialog_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding"
+            android:paddingTop="60dp">
+
+            <TextView
+                android:id="@+id/item_religion_feature_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="玉皇宮"
+                android:textColor="@color/gray_64"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/item_religion_feature_dialog_player_fl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                    android:id="@+id/item_religion_feature_dialog_player_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/item_religion_feature_dialog_niv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <com.omni.kaoreligion.tool.JustifyTextView
+                android:id="@+id/item_religion_feature_dialog_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="內文說明文字"
+                android:textColor="@color/gray_64"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

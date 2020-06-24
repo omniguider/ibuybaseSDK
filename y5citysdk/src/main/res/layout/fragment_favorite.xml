@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_favorite_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solid_gradient_purple"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/solid_gradient_purple">
+
+            <FrameLayout
+                android:id="@+id/fragment_favorite_fl_back"
+                android:layout_width="@dimen/action_bar_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:src="@mipmap/button_back" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_favorite_fl_edit"
+                android:layout_width="@dimen/action_bar_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:src="@mipmap/button_edit" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_favorite_fl_complete"
+                android:layout_width="@dimen/action_bar_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/fragment_favorite_complete"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/fragment_favorite_action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/activity_main_btn_favorite"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_action_bar"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/fragment_favorite_tl"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/tab_red"
+                app:tabIndicatorHeight="3dp"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="5dp"
+                app:tabPaddingStart="5dp"
+                app:tabSelectedTextColor="@color/tab_text_selected"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="@color/tab_text_unselected" />
+
+            <com.omni.y5citysdk.view.OmniViewPager
+                android:id="@+id/fragment_favorite_ovp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                app:slide_paging_enabled="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_custom_route_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solid_gradient_purple"
+    android:clickable="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_f3"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/solid_gradient_purple">
+
+            <FrameLayout
+                android:id="@+id/fragment_custom_route_fl_back"
+                android:layout_width="@dimen/action_bar_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:src="@mipmap/button_back" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/fragment_custom_route_tv_action_bar_title"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/fragment_custom_route_action_bar_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_action_bar"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/fragment_custom_route_fl_edit"
+                    android:layout_width="@dimen/action_bar_btn_width"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:src="@mipmap/button_edit" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fragment_custom_route_fl_complete"
+                    android:layout_width="@dimen/action_bar_btn_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="4dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/fragment_favorite_complete"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fragment_custom_route_fl_map"
+                    android:layout_width="@dimen/action_bar_btn_width"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:src="@mipmap/btn_map_pin_w" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/solid_gradient_purple" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/fragment_custom_route_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:color/white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"
+                android:src="@drawable/solid_gradient_black" />
+
+            <ImageView
+                android:id="@+id/fragment_custom_route_banner_edit_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/btn_cam_w"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/default_padding"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/image_1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fragment_custom_route_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:text="愛情發大財愛情發大財愛情發大財愛情發大財"
+                            android:textColor="@android:color/white"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/fragment_custom_route_title_edit_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="1"
+                            android:padding="1dp"
+                            android:src="@mipmap/icon_edit_w"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fragment_custom_route_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2019 04 30"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/fragment_custom_route_date_edit_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="6dp"
+                            android:padding="1dp"
+                            android:src="@mipmap/icon_edit_w"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_padding"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_custom_route_one"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/solid_round_rectangle_gradient_purple"
+                    android:gravity="center"
+                    android:text="@string/fragment_custom_route_day_one"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/fragment_custom_route_one_delete"
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:src="@mipmap/btn_delet_date_g"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/fragment_custom_route_two"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/solid_round_rectangle_gradient_purple_stroke"
+                    android:gravity="center"
+                    android:text="@string/fragment_custom_route_day_two"
+                    android:textColor="@color/sdkColorPrimary"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/fragment_custom_route_two_delete"
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:src="@mipmap/btn_delet_date_g"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/fragment_custom_route_three"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/solid_round_rectangle_gradient_purple_stroke"
+                    android:gravity="center"
+                    android:text="@string/fragment_custom_route_day_three"
+                    android:textColor="@color/sdkColorPrimary"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/fragment_custom_route_three_delete"
+                    android:layout_width="14dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:src="@mipmap/btn_delet_date_g"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/fragment_custom_route_add_day"
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:src="@mipmap/btn_add_poi_p"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_custom_route_start_time_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/fragment_custom_route_departure_time"
+                android:textColor="@color/gray_6a"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fragment_custom_route_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:00"
+                android:textColor="@color/time_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fragment_custom_route_start_time_ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="AM"
+                android:textColor="@color/time_blue"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/fragment_custom_route_nsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:scrollbars="vertical">
+
+            <com.jmedeisis.draglinearlayout.DragLinearLayout
+                android:id="@+id/fragment_custom_route_ll_contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_padding"
+                android:layout_marginEnd="@dimen/default_padding"
+                android:layout_marginBottom="@dimen/default_padding"
+                android:orientation="vertical">
+
+            </com.jmedeisis.draglinearlayout.DragLinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fragment_custom_route_add_point_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@color/black_66"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fragment_custom_route_add_point_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/fragment_custom_route_new"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_route_new"
+            android:textColor="@color/sdkColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_cd" />
+
+        <TextView
+            android:id="@+id/fragment_custom_route_from_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_route_from_favorite"
+            android:textColor="@color/sdkColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_cd" />
+
+        <TextView
+            android:id="@+id/fragment_custom_route_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/solid_gradient_red"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_route_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_custom_route_add_cover_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/fragment_custom_route_default"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_route_default"
+            android:textColor="@color/sdkColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_cd" />
+
+        <TextView
+            android:id="@+id/fragment_custom_route_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_route_gallery"
+            android:textColor="@color/sdkColorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_cd" />
+
+        <TextView
+            android:id="@+id/fragment_custom_route_add_cover_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/solid_gradient_red"
+            android:gravity="center"
+            android:letterSpacing="0.2"
+            android:text="@string/fragment_custom_route_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_custom_route_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/solid_gradient_red"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="@string/fragment_favorite_delete"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/fragment_custom_route_copy_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/solid_gradient_pink"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/fragment_theme_route_route_copy"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.omni.y5citysdk.view.custom.GridViewItem
+            android:id="@+id/grid_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/shadow"
+            android:scaleType="centerCrop"
+            android:src="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/grid_item_menu_black"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:src="@drawable/solid_gradient_black" />
+
+        <ImageView
+            android:id="@+id/grid_item_menu"
+            android:layout_width="27dp"
+            android:layout_height="42dp"
+            android:layout_gravity="bottom|end"
+            android:padding="3dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/menu"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/grid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/gray_6a"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

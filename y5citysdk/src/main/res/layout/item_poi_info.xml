@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/solid_top_round_rectangle_white"
+    android:clickable="true">
+
+    <include
+        android:id="@+id/poi_info_view_header"
+        layout="@layout/item_poi_header" />
+
+    <!--<View-->
+    <!--android:id="@+id/poi_info_view_divider"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_below="@+id/poi_info_view_header"-->
+    <!--android:layout_marginStart="@dimen/default_padding"-->
+    <!--android:layout_marginEnd="@dimen/default_padding"-->
+    <!--android:background="@color/gray_e0" />-->
+
+    <View
+        android:id="@+id/poi_info_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/poi_info_view_header"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:background="@color/gray_d8"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/poi_info_view_divider">
+
+        <com.omni.y5citysdk.view.items.NestedListView
+            android:id="@+id/poi_info_view_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/default_padding"
+            android:layout_marginEnd="@dimen/default_padding">
+
+        </com.omni.y5citysdk.view.items.NestedListView>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

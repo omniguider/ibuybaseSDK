@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_favorite_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <ListView
+        android:id="@+id/fragment_favorite_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/default_padding"
+        android:layout_marginEnd="@dimen/default_padding"
+        android:layout_marginBottom="100dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/fragment_favorite_list_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="?actionBarSize"
+        android:background="@drawable/solid_gradient_red"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="@string/fragment_favorite_delete"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</FrameLayout>

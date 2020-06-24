@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_custom_setup_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solid_gradient_purple"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/solid_gradient_purple">
+
+            <FrameLayout
+                android:id="@+id/fragment_custom_setup_fl_back"
+                android:layout_width="@dimen/action_bar_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:src="@mipmap/button_back" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/fragment_custom_setup_action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/fragment_custom_setup_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_action_bar"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/fragment_custom_setup_name"
+                android:textColor="@color/gray_64"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fragment_custom_setup_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/rectangle_copy_7"
+                android:hint="@string/fragment_custom_setup_name_hint"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/gray_64"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_padding"
+                android:layout_marginBottom="8dp"
+                android:text="@string/fragment_custom_setup_date"
+                android:textColor="@color/gray_64"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/fragment_custom_setup_date_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/rectangle_copy_7"
+                android:focusable="false"
+                android:hint="@string/fragment_custom_setup_date_hint"
+                android:padding="8dp"
+                android:textColor="@color/gray_64"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_padding"
+                android:layout_marginBottom="@dimen/default_padding"
+                android:text="@string/fragment_custom_setup_traffic"
+                android:textColor="@color/gray_64"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragment_custom_setup_traffic_car_select_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/btn_select" />
+
+                <ImageView
+                    android:id="@+id/fragment_custom_setup_traffic_car_iv"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@mipmap/btn_car_p" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/fragment_custom_setup_traffic_car"
+                    android:textColor="@color/gray_64"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_padding"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fragment_custom_setup_traffic_mrt_select_iv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/btn_unselect" />
+
+                <ImageView
+                    android:id="@+id/fragment_custom_setup_traffic_mrt_iv"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:src="@mipmap/btn_mrt_g" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/fragment_custom_setup_traffic_mrt"
+                    android:textColor="@color/gray_64"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@mipmap/rectangle_copy_7"-->
+            <!--android:hint="@string/fragment_custom_setup_days_hint"-->
+            <!--android:inputType="number"-->
+            <!--android:padding="8dp"-->
+            <!--android:textColor="@color/gray_64"-->
+            <!--android:textSize="20sp" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_custom_setup_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/solid_gradient_pink"
+        android:gravity="center"
+        android:text="@string/fragment_custom_setup_save"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</FrameLayout>

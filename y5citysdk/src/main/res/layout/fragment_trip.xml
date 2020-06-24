@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solid_gradient_purple"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/solid_gradient_purple">
+
+            <FrameLayout
+                android:id="@+id/fragment_trip_fl_back"
+                android:layout_width="@dimen/action_bar_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="left">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:src="@mipmap/button_back" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/fragment_trip_tv_action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_action_bar"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/fragment_trip_fl_home"
+                android:layout_width="@dimen/action_bar_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:src="@drawable/action_bar_hamburger" />
+
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/fragment_trip_tl"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                app:tabBackground="@drawable/tab_color_selector"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/tab_red"
+                app:tabIndicatorHeight="3dp"
+                app:tabMaxWidth="0dp"
+                app:tabMode="fixed"
+                app:tabPaddingEnd="5dp"
+                app:tabPaddingStart="5dp"
+                app:tabSelectedTextColor="@color/tab_text_selected"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="@color/tab_text_unselected" />
+
+            <com.omni.y5citysdk.view.OmniViewPager
+                android:id="@+id/fragment_trip_ovp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                app:slide_paging_enabled="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
