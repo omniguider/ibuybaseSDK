@@ -46,10 +46,12 @@ public class Y5CitySDKActivity extends BaseActivity {
     private static final String ARG_KEY_USER_ID = "arg_key_user_id";
     private static final String ARG_KEY_USER_NAME = "arg_key_user_name";
     private static final String ARG_KEY_PROJECT_ID = "arg_key_project_id";
+    private static final String ARG_KEY_TYPE = "arg_key_type";
 
     private String user_id;
     private String user_name;
     private String project_id;
+    private String type;
 
     public static String locale;
 
@@ -76,6 +78,7 @@ public class Y5CitySDKActivity extends BaseActivity {
         user_id = getIntent().getStringExtra(ARG_KEY_USER_ID);
         user_name = getIntent().getStringExtra(ARG_KEY_USER_NAME);
         project_id = getIntent().getStringExtra(ARG_KEY_PROJECT_ID);
+        type = getIntent().getStringExtra(ARG_KEY_TYPE);
 
         actionBarTitle = findViewById(R.id.fragment_trip_tv_action_bar_title);
 
@@ -98,6 +101,8 @@ public class Y5CitySDKActivity extends BaseActivity {
                                 mViewPager = findViewById(R.id.fragment_trip_ovp);
                                 mViewPager.setAdapter(new TripPagerAdapter(getSupportFragmentManager(), Y5CitySDKActivity.this));
                                 mViewPager.setCurrentItem(0);
+                                if (type.equals("map"))
+                                    mViewPager.setCurrentItem(2);
                                 mViewPager.setOffscreenPageLimit(3);
 
                                 mTabLayout = findViewById(R.id.fragment_trip_tl);
@@ -110,7 +115,8 @@ public class Y5CitySDKActivity extends BaseActivity {
                             }
                         });
 
-                        actionBarTitle.setText(data.getTitle());
+                        if (type.equals("map"))
+                            actionBarTitle.setText("周邊資訊");
 
                         Y5CityAPI.getInstance().getFavorite(Y5CitySDKActivity.this, UserInfoManager.Companion.getInstance().getUserLoginToken(Y5CitySDKActivity.this),
                                 new NetworkManager.NetworkManagerListener<FavoriteData>() {

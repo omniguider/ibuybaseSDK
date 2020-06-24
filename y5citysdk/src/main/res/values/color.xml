@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimary">#ff8383</color>
-    <color name="colorPrimaryDark">#ff8383</color>
-    <color name="colorAccent">#ff8383</color>
+    <color name="colorPrimary">#385870</color>
+    <color name="colorPrimaryDark">#385870</color>
+    <color name="colorAccent">#385870</color>
 
-    <color name="sdkColorPrimary">#ff8383</color>
+    <color name="sdkColorPrimary">#385870</color>
 
     <color name="gray_e0">#e0e0e0</color>
     <color name="gray_c3">#c3c3c3</color>

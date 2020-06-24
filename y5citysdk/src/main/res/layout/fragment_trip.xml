@@ -39,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:text="遊憩休閒"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_size_action_bar"
                 android:textStyle="bold" />

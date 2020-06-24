@@ -37,7 +37,6 @@ import com.omni.y5citysdk.module.OmniEvent;
 import com.omni.y5citysdk.module.trip.TripInfoData;
 import com.omni.y5citysdk.network.NetworkManager;
 import com.omni.y5citysdk.tool.SetTimePickerDialog;
-import com.omni.y5citysdk.tool.Tools;
 import com.omni.y5citysdk.tool.Y5CityText;
 import com.omni.y5citysdk.view.items.OmniClusterItem;
 import com.omni.y5citysdk.view.theme.ReligionInfoFragment;
