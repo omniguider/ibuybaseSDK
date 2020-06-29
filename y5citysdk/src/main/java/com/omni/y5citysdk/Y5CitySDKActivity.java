@@ -117,6 +117,8 @@ public class Y5CitySDKActivity extends BaseActivity {
 
                         if (type.equals("map"))
                             actionBarTitle.setText("周邊資訊");
+                        else
+                            actionBarTitle.setText("遊憩休閒");
 
                         Y5CityAPI.getInstance().getFavorite(Y5CitySDKActivity.this, UserInfoManager.Companion.getInstance().getUserLoginToken(Y5CitySDKActivity.this),
                                 new NetworkManager.NetworkManagerListener<FavoriteData>() {
