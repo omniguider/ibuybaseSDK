@@ -5,14 +5,18 @@ import android.content.res.TypedArray;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
 import androidx.fragment.app.Fragment;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -222,7 +226,7 @@ public class PointMapFragment extends Fragment implements OnMapReadyCallback, Go
 //        mView.setPadding(0, Tools.STATUS_BAR, 0, 0);
 
         if (Y5CitySDKActivity.type.equals("traffic"))
-            current_tab = 5;
+            traffic_fl.callOnClick();
 
         initPOIInfoView();
 
