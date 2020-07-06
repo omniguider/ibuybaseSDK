@@ -1,7 +1,7 @@
 package com.omni.y5citysdk.manager
 
 import android.app.Activity
-import android.support.v4.app.FragmentActivity
+import androidx.fragment.app.FragmentActivity
 import android.text.TextUtils
 import android.util.Base64
 import android.util.Log

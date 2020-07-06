@@ -30,7 +30,7 @@
         android:visibility="visible"
         tools:ignore="MissingConstraints" />
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/poi_info_view_divider">
@@ -43,6 +43,6 @@
             android:layout_marginEnd="@dimen/default_padding">
 
         </com.omni.y5citysdk.view.items.NestedListView>
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>

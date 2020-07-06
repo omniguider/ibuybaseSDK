@@ -1,16 +1,13 @@
 package com.omni.y5citysdkdemo;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
 import com.omni.y5citysdk.Y5CitySDKActivity;
-
-import static com.omni.y5citysdk.tool.Y5CityText.LOG_TAG;
 
 public class MainActivity extends AppCompatActivity {
 

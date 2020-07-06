@@ -3,8 +3,8 @@ package com.omni.y5citysdk.view.custom;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,14 +17,12 @@ import com.omni.y5citysdk.R;
 import com.omni.y5citysdk.manager.UserInfoManager;
 import com.omni.y5citysdk.module.OmniEvent;
 import com.omni.y5citysdk.module.trip.ReligionInfoFeedback;
-import com.omni.y5citysdk.module.trip.TripInfoData;
 import com.omni.y5citysdk.module.trip.TripInfoFeedback;
 import com.omni.y5citysdk.module.trip.UserTripInfoFeedback;
 import com.omni.y5citysdk.module.trip.UserTripPoint;
 import com.omni.y5citysdk.module.trip.UserTripUpdateData;
 import com.omni.y5citysdk.network.NetworkManager;
 import com.omni.y5citysdk.network.Y5CityAPI;
-import com.omni.y5citysdk.tool.Tools;
 
 import org.greenrobot.eventbus.EventBus;
 

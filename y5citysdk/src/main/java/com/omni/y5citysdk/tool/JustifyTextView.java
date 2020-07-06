@@ -7,7 +7,7 @@ import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 
-public class JustifyTextView extends android.support.v7.widget.AppCompatTextView {
+public class JustifyTextView extends androidx.appcompat.widget.AppCompatTextView {
 
     private int mLineY = 0;
     private int mViewWidth;

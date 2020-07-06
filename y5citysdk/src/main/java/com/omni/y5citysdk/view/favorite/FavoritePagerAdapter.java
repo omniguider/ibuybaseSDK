@@ -2,9 +2,9 @@ package com.omni.y5citysdk.view.favorite;
 
 import android.content.Context;
 import android.os.Parcelable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.omni.y5citysdk.manager.DataCacheManager;
 import com.omni.y5citysdk.module.favorite.FavoriteData;

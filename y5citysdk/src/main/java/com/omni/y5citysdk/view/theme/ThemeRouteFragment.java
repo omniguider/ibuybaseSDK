@@ -2,8 +2,8 @@ package com.omni.y5citysdk.view.theme;
 
 import android.app.TimePickerDialog;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +19,6 @@ import com.omni.y5citysdk.module.trip.TripInfoData;
 import com.omni.y5citysdk.module.trip.TripInfoFeedback;
 import com.omni.y5citysdk.network.NetworkManager;
 import com.omni.y5citysdk.network.Y5CityAPI;
-import com.omni.y5citysdk.tool.Tools;
 import com.omni.y5citysdk.view.custom.CustomSetupFragment;
 import com.omni.y5citysdk.view.navi.InfoMapFragment;
 

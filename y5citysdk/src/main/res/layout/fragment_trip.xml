@@ -13,7 +13,7 @@
         android:clickable="true"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@drawable/solid_gradient_purple">
@@ -61,7 +61,7 @@
 
             </FrameLayout>
 
-        </android.support.v7.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                 android:layout_height="1dp"
                 android:background="@android:color/white" />
 
-            <android.support.design.widget.TabLayout
+            <com.google.android.material.tabs.TabLayout
                 android:id="@+id/fragment_trip_tl"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"

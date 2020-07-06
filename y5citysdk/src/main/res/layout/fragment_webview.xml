@@ -12,7 +12,7 @@
         android:clickable="true"
         android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@drawable/solid_gradient_purple">
@@ -43,7 +43,7 @@
                 android:textSize="@dimen/text_size_action_bar"
                 android:textStyle="bold" />
 
-        </android.support.v7.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
         <WebView
             android:id="@+id/fragment_webview_wv"
