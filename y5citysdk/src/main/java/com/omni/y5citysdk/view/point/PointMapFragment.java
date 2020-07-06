@@ -225,9 +225,6 @@ public class PointMapFragment extends Fragment implements OnMapReadyCallback, Go
         mView = inflater.inflate(R.layout.fragment_point_map, container, false);
 //        mView.setPadding(0, Tools.STATUS_BAR, 0, 0);
 
-        if (Y5CitySDKActivity.type.equals("traffic"))
-            traffic_fl.callOnClick();
-
         initPOIInfoView();
 
         if (type.equals("guide")) {
@@ -559,6 +556,9 @@ public class PointMapFragment extends Fragment implements OnMapReadyCallback, Go
                 }
             }
         });
+
+        if (Y5CitySDKActivity.type.equals("traffic"))
+            traffic_fl.callOnClick();
 
         return mView;
     }
