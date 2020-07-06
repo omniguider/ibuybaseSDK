@@ -51,7 +51,7 @@ public class Y5CitySDKActivity extends BaseActivity {
     private String user_id;
     private String user_name;
     private String project_id;
-    private String type;
+    public static String type;
 
     public static String locale;
 
@@ -117,6 +117,8 @@ public class Y5CitySDKActivity extends BaseActivity {
 
                         if (type.equals("map"))
                             actionBarTitle.setText("周邊資訊");
+                        else if (type.equals("traffic"))
+                            actionBarTitle.setText("交通資訊");
                         else
                             actionBarTitle.setText("遊憩休閒");
 

@@ -43,6 +43,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.clustering.Cluster;
 import com.google.maps.android.clustering.ClusterManager;
 import com.omni.y5citysdk.R;
+import com.omni.y5citysdk.Y5CitySDKActivity;
 import com.omni.y5citysdk.manager.UserInfoManager;
 import com.omni.y5citysdk.module.OmniEvent;
 import com.omni.y5citysdk.module.point.AreaData;
@@ -219,6 +220,9 @@ public class PointMapFragment extends Fragment implements OnMapReadyCallback, Go
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_point_map, container, false);
 //        mView.setPadding(0, Tools.STATUS_BAR, 0, 0);
+
+        if (Y5CitySDKActivity.type.equals("traffic"))
+            current_tab = 5;
 
         initPOIInfoView();
 
