@@ -91,9 +91,9 @@ public class Y5CitySDKActivity extends BaseActivity {
                         Y5CityAPI.getInstance().sdkLogin(Y5CitySDKActivity.this, parameter, new NetworkManager.NetworkManagerListener<CheckUserLoginData>() {
                             @Override
                             public void onSucceed(CheckUserLoginData checkUserLoginData) {
-                                UserInfoManager.Companion.getInstance().saveUserData(
-                                        Y5CitySDKActivity.this, checkUserLoginData);
-                                loginToken = checkUserLoginData.getLoginToken();
+//                                UserInfoManager.Companion.getInstance().saveUserData(
+//                                        Y5CitySDKActivity.this, checkUserLoginData);
+//                                loginToken = checkUserLoginData.getLoginToken();
 
                                 mViewPager = findViewById(R.id.fragment_trip_ovp);
                                 mViewPager.setAdapter(new TripPagerAdapter(getSupportFragmentManager(), Y5CitySDKActivity.this));
@@ -119,17 +119,17 @@ public class Y5CitySDKActivity extends BaseActivity {
                         else
                             actionBarTitle.setText("遊憩休閒");
 
-                        Y5CityAPI.getInstance().getFavorite(Y5CitySDKActivity.this, UserInfoManager.Companion.getInstance().getUserLoginToken(Y5CitySDKActivity.this),
-                                new NetworkManager.NetworkManagerListener<FavoriteData>() {
-                                    @Override
-                                    public void onSucceed(FavoriteData favoriteData) {
-                                        PreferencesTools.getInstance().saveProperty(Y5CitySDKActivity.this, PreferencesTools.KEY_PREFERENCES_FAVORITE, favoriteData);
-                                    }
-
-                                    @Override
-                                    public void onFail(String errorMsg, boolean shouldRetry) {
-                                    }
-                                });
+//                        Y5CityAPI.getInstance().getFavorite(Y5CitySDKActivity.this, UserInfoManager.Companion.getInstance().getUserLoginToken(Y5CitySDKActivity.this),
+//                                new NetworkManager.NetworkManagerListener<FavoriteData>() {
+//                                    @Override
+//                                    public void onSucceed(FavoriteData favoriteData) {
+//                                        PreferencesTools.getInstance().saveProperty(Y5CitySDKActivity.this, PreferencesTools.KEY_PREFERENCES_FAVORITE, favoriteData);
+//                                    }
+//
+//                                    @Override
+//                                    public void onFail(String errorMsg, boolean shouldRetry) {
+//                                    }
+//                                });
                     }
                 }
             }
