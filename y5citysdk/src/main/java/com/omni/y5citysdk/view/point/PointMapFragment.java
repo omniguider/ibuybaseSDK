@@ -292,6 +292,9 @@ public class PointMapFragment extends Fragment implements OnMapReadyCallback, Go
         currentPositionIV = mView.findViewById(R.id.fragment_point_map_fab_current_position);
         spinner_fl = mView.findViewById(R.id.fragment_point_map_spinner_fl);
 
+        if (Y5CitySDKActivity.type.equals("traffic"))
+            current_tab = 5;
+
         switch (current_tab) {
             case 0:
                 religion_tv.setBackgroundColor(getResources().getColor(R.color.sdkColorPrimary));
@@ -556,9 +559,6 @@ public class PointMapFragment extends Fragment implements OnMapReadyCallback, Go
                 }
             }
         });
-
-        if (Y5CitySDKActivity.type.equals("traffic"))
-            traffic_fl.callOnClick();
 
         return mView;
     }
