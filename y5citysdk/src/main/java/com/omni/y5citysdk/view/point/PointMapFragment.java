@@ -483,6 +483,10 @@ public class PointMapFragment extends Fragment implements OnMapReadyCallback, Go
                                             poiData = pointData.getHotel();
                                             addPOIMarkers(poiData, "hotel");
                                             break;
+                                        default:
+                                            poiData = pointData.getFood();
+                                            addPOIMarkers(poiData, "food");
+                                            break;
                                     }
 
                                     mInfoListAdapter = new InfoListAdapter(getActivity(), poiData);
